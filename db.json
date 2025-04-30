@@ -1,0 +1,33 @@
+{
+    "houseManagers": [
+      {
+        "id": 1,
+        "name": "Elizabeth Wanjiku",
+        "role": "House Manager",
+        "experience": "5 years",
+        "rating": 4.8,
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "babysitters": [
+      {
+        "id": 1,
+        "name": "Emily Wanja",
+        "role": "Babysitter",
+        "experience": "3 years",
+        "rating": 4.9,
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "urgentAssistants": [
+      {
+        "id": 1,
+        "name": "Peter Maina",
+        "role": "Urgent Assistant",
+        "experience": "2 years",
+        "rating": 4.7,
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "bookings": []
+  }
