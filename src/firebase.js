@@ -4,7 +4,7 @@ import {
   getAuth,
   GoogleAuthProvider,
   signInWithPopup,
-  createUserWithEmailAndPassword,
+  createUserWithEmailAndPassword,//ikikataa toa hizi mbili
   signInWithEmailAndPassword,
   signOut
 } from 'firebase/auth';
@@ -21,7 +21,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
-console.log("API Key: ", import.meta.env.VITE_FIREBASE_API_KEY);
+// console.log("API Key: ", import.meta.env.VITE_FIREBASE_API_KEY);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -33,7 +33,7 @@ export const db = getFirestore(app);
 
 // Auth utility functions
 export const googleSignIn = () => signInWithPopup(auth, provider);
-export const emailSignUp = (email, password) => createUserWithEmailAndPassword(auth, email, password);
+// export const emailSignUp = (email, password) => createUserWithEmailAndPassword(auth, email, password); na pia hizi mbili
 export const emailSignIn = (email, password) => signInWithEmailAndPassword(auth, email, password);
 export const logOut = () => signOut(auth);
 

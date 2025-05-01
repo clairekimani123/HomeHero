@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "../components/ProfileCard";
 
 export default function Profiles() {
   const [managers, setManagers] = useState([]);
@@ -8,10 +8,22 @@ export default function Profiles() {
   const [assistants, setAssistants] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/houseManagers").then((res) => setManagers(res.data));
-    axios.get("http://localhost:3001/babysitters").then((res) => setBabysitters(res.data));
-    axios.get("http://localhost:3001/urgentAssistants").then((res) => setAssistants(res.data));
+    fetch("http://localhost:3001/houseManagers")
+      .then((res) => res.json())
+      .then((data) => setManagers(data))
+      .catch((error) => console.error("Error fetching houseManager:", error));
+
+    fetch("http://localhost:3001/babysitters")
+      .then((res) => res.json())
+      .then((data) => setBabysitters(data))
+      .catch((error) => console.error("Error fetching babysitters:", error));
+
+    fetch("http://localhost:3001/urgentAssistants")
+      .then((res) => res.json())
+      .then((data) => setAssistants(data))
+      .catch((error) => console.error("Error fetching urgentAssistants:", error));
   }, []);
+
 
   return (
     <div className="p-6">
