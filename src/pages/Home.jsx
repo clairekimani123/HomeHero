@@ -1,4 +1,4 @@
-// src/pages/Home.jsx
+
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth, logOut } from "../firebase";

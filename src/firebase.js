@@ -9,6 +9,7 @@ import {
   signOut
 } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { onAuthStateChanged } from 'firebase/auth';
 
 // Firebase configuration using environment variables
 const firebaseConfig = {
@@ -20,6 +21,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
+console.log("API Key: ", import.meta.env.VITE_FIREBASE_API_KEY);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -34,3 +36,7 @@ export const googleSignIn = () => signInWithPopup(auth, provider);
 export const emailSignUp = (email, password) => createUserWithEmailAndPassword(auth, email, password);
 export const emailSignIn = (email, password) => signInWithEmailAndPassword(auth, email, password);
 export const logOut = () => signOut(auth);
+
+export const onAuthUserStateChange = (callback) => {
+  return onAuthStateChanged(auth, callback);
+};

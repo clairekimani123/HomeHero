@@ -1,8 +1,13 @@
 // src/App.jsx
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import Profiles from "./components/Profiles";
+import ProfileCard from "./components/ProfileCard";
+import BookService from "./components/BookService";
 import { auth, onAuthUserStateChange } from "./firebase";
 
 // PrivateRoute Component
@@ -61,6 +66,8 @@ function App() {
       <Routes>
         <Route path="/" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
+        <Route path="/profiles" element={<PrivateRoute><Profiles /></PrivateRoute>} />
+        <Route path="/book" element={<PrivateRoute><BookService /></PrivateRoute>} />
       </Routes>
     </Router>
   );
