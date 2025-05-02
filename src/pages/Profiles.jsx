@@ -9,19 +9,19 @@ export default function Profiles() {
 
   useEffect(() => {
     fetch("http://localhost:3001/houseManagers")
-      .then((res) => res.json())
-      .then((data) => setManagers(data))
-      .catch((error) => console.error("Error fetching houseManager:", error));
+      .then(res => res.json())
+      .then(data => setManagers(data))
+      .catch(error => console.error("Error fetching houseManager:", error));
 
     fetch("http://localhost:3001/babysitters")
-      .then((res) => res.json())
-      .then((data) => setBabysitters(data))
-      .catch((error) => console.error("Error fetching babysitters:", error));
+      .then(res => res.json())
+      .then(data => setBabysitters(data))
+      .catch(error => console.error("Error fetching babysitters:", error));
 
     fetch("http://localhost:3001/urgentAssistants")
-      .then((res) => res.json())
-      .then((data) => setAssistants(data))
-      .catch((error) => console.error("Error fetching urgentAssistants:", error));
+      .then(res => res.json())
+      .then(data => setAssistants(data))
+      .catch(error => console.error("Error fetching urgentAssistants:", error));
   }, []);
 
 
