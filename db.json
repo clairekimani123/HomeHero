@@ -1,0 +1,90 @@
+{
+  "houseManagers": [
+    {
+      "id": 1,
+      "name": "Elizabeth Wanjiku",
+      "role": "House Manager",
+      "experience": "5 years",
+      "rating": 4.8,
+      "image": "/images/maid1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Joyce Wairimu",
+      "role": "House Manager",
+      "experience": "5 years",
+      "rating": 4.8,
+      "image": "/images/maid2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Joseph Wamuyu",
+      "role": "House Manager",
+      "experience": "5 years",
+      "rating": 4.8,
+      "image": "/images/maid3.jpeg"
+    }
+  ],
+  "babysitters": [
+    {
+      "id": 1,
+      "name": "Emily Wanja",
+      "role": "Babysitter",
+      "experience": "3 years",
+      "rating": 4.9,
+      "image": "/images/babystr1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Gabriel Wanjiru",
+      "role": "Babysitter",
+      "experience": "3 years",
+      "rating": 4.9,
+      "image": "/images/babystr2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Peter Maina",
+      "role": "Babysitter",
+      "experience": "3 years",
+      "rating": 4.9,
+      "image": "/images/babystr3.jpeg"
+    }
+  ],
+  "urgentAssistants": [
+    {
+      "id": 1,
+      "name": "Elizabeth Wanjiku",
+      "role": "Urgent Assistant",
+      "experience": "2 years",
+      "rating": 4.7,
+      "image": "/images/urgent1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Dominic Waweru",
+      "role": "Urgent Assistant",
+      "experience": "2 years",
+      "rating": 4.7,
+      "image": "/images/urgent2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Joyce Wairimu",
+      "role": "Urgent Assistant",
+      "experience": "2 years",
+      "rating": 4.7,
+      "image": "/images/urgent3.jpeg"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "9969",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-23",
+      "time": "15:55",
+      "notes": "dry the rooms"
+    }
+  ]
+}

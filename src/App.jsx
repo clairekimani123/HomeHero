@@ -1,18 +1,13 @@
-// src/App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./AuthContext";
 import PrivateRoute from "./routes/PrivateRoute";
-
-
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Profiles from "./pages/Profiles";
 import BookService from "./pages/BookService";
 import NavBar from "./components/NavBar";
-import ProfileCard from "./components/ProfileCard";
-import { auth, onAuthUserStateChange } from "./firebase";
-
+import { onAuthUserStateChange } from "./firebase";
 
 // PublicRoute Component
 function PublicRoute({ children }) {

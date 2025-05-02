@@ -18,7 +18,7 @@ export default function BookService() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://json-server-1-ii63.onrender.com/bookings", {
+    fetch("http://localhost:3001/bookings", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
