@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Profiles from "./pages/Profiles";
 import BookService from "./pages/BookService";
 import NavBar from "./components/NavBar";
+import Payment from "./pages/Payment"
 import { onAuthUserStateChange } from "./firebase";
 
 // PublicRoute Component
@@ -45,6 +46,7 @@ function App() {
             <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
             <Route path="/profiles" element={<PrivateRoute><Profiles /></PrivateRoute>} />
             <Route path="/book" element={<PrivateRoute><BookService /></PrivateRoute>} />
+            <Route path="/payment" element={<PrivateRoute><Payment /></PrivateRoute>} />
           </Routes>
         </div>
       </Router>
