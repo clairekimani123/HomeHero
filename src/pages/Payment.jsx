@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
 
@@ -15,7 +16,7 @@ const Payment = () => {
 
 
         try {
-            const response = await fetch('http://localhost:5000/api/mpesa/stkpush', {
+            const response = await fetch('http://localhost:3001/api/mpesa/stkpush', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

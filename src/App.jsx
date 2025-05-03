@@ -6,8 +6,9 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Profiles from "./pages/Profiles";
 import BookService from "./pages/BookService";
+import Payment from "./pages/Payment";
 import NavBar from "./components/NavBar";
-import Payment from "./pages/Payment"
+
 import { onAuthUserStateChange } from "./firebase";
 
 // PublicRoute Component
