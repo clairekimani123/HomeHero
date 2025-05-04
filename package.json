@@ -8,9 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch db.json --port 3001" 
+    "server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "firebase": "^11.6.1",
     "json-server": "^1.0.0-beta.3",
     "react": "^19.0.0",
@@ -41,6 +43,5 @@
   "bugs": {
     "url": "https://github.com/clairekimani123/HomeHero/issues"
   },
-  "homepage":  "https://clairekimani123.github.io/HomeHero"
-
+  "homepage": "https://clairekimani123.github.io/HomeHero"
 }

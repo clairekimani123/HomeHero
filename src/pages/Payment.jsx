@@ -12,11 +12,11 @@ const Payment = () => {
     const handlePayment = async (e) => {
         e.preventDefault();
         setLoading(true);
-        setPaymentStatus('');
+        setPayment('');
 
 
         try {
-            const response = await fetch('http://localhost:3001/api/mpesa/stkpush', {
+            const response = await fetch('http:/api/mpesa/stkpush', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',
@@ -54,7 +54,7 @@ const Payment = () => {
                     type="text"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="e.g. 254717793977"
+                    placeholder="254717793977"
                     className="w-full border px-3 py-2 rounded"
                     required
                  />
