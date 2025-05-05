@@ -15,55 +15,35 @@ export default function BookService() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("https://home-hero-server.vercel.app/bookings", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      
-      console.log("Response Status:", response.status);
-      console.log("Response OK:", response.ok);
-  
-     const text = await response.json();
-     console.log("Raw Response Text:", text);
 
-     let data;
-     try {
-      data = JSON.parse(text);
-     } catch (e) {
-      throw new Error(text);
-     }
-     
-     
-      if (!response.ok) {
-        throw new Error(data.message || "Network response was not ok");
-      }
-  
-      
-      if (data.success || response.status === 200 || response.status === 201) {
-        alert("Booking submitted successfully!");
-        setFormData({
-          name: "",
-          serviceType: "House Manager",
-          date: "",
-          time: "",
-          notes: "",
-        });
-        // Optionally navigate or trigger a refresh of bookings
-        // navigate("/bookings"); // Uncomment if you want to redirect
-      } else {
-        alert(data.message || "There was an issue with the booking. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error:", error.message);
-      alert(`An error occurred while submitting your booking: ${error.message}`);
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("https://home-hero-server.vercel.app/bookings", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+      .then(res => {
+        console.log(res);
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return res.json();
+    })
+      .then(res => {
+        if (res.success) {
+          alert("Booking submitted successfully!");
+
+        } else {
+          alert("There is a issue wit the booking. Please try again.");
+        }
+        setFormData({name: "", serviceType: "House Manager", date: "", notes: ""});
+      })
+      .catch(erro => {
+        console.error(err)
+      })
   };
 
   return (
