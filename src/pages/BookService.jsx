@@ -15,27 +15,48 @@ export default function BookService() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch("https://home-hero-server.vercel.app/bookings", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(res => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
-    })
-      .then(res => {
+    try {
+      const response = await fetch("https://home-hero-server.vercel.app/bookings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      
+      console.log("Response Status:", response.status);
+      console.log("Response OK:", response.ok);
+  
+      const data = await response.json();
+     
+      console.log("Response Data:", data);
+  
+      if (!response.ok) {
+        throw new Error(data.message || "Network response was not ok");
+      }
+  
+      
+      if (data.success || response.status === 200 || response.status === 201) {
         alert("Booking submitted successfully!");
-        setFormData({ ...formData, name: "", notes: "" });
-      })
-      .catch(err => console.error(err));
+        setFormData({
+          name: "",
+          serviceType: "House Manager",
+          date: "",
+          time: "",
+          notes: "",
+        });
+        // Optionally navigate or trigger a refresh of bookings
+        // navigate("/bookings"); // Uncomment if you want to redirect
+      } else {
+        alert(data.message || "There was an issue with the booking. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error.message);
+      alert(`An error occurred while submitting your booking: ${error.message}`);
+    }
   };
 
   return (
