@@ -148,6 +148,14 @@
       "date": "2025-04-30",
       "time": "14:39",
       "notes": "clean the rooms"
+    },
+    {
+      "id": "7e9c",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-30",
+      "time": "15:15",
+      "notes": "clean the windows"
     }
   ],
   "trasactions": [
@@ -155,6 +163,11 @@
       "id": "66ce",
       "phone": "0717793977",
       "amount": "50"
+    },
+    {
+      "id": "f7bf",
+      "phone": "0721712171",
+      "amount": "200"
     }
   ]
 }
