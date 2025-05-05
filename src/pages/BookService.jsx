@@ -30,10 +30,17 @@ export default function BookService() {
       console.log("Response Status:", response.status);
       console.log("Response OK:", response.ok);
   
-      const data = await response.json();
+     const text = await response.json();
+     console.log("Raw Response Text:", text);
+
+     let data;
+     try {
+      data = JSON.parse(text);
+     } catch (e) {
+      throw new Error(text);
+     }
      
-      console.log("Response Data:", data);
-  
+     
       if (!response.ok) {
         throw new Error(data.message || "Network response was not ok");
       }
