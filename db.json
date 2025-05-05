@@ -109,7 +109,52 @@
       "date": "2025-06-04",
       "time": "09:13",
       "notes": "dishes"
+    },
+    {
+      "id": "8912",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "House Manager",
+      "date": "2025-05-29",
+      "time": "14:22",
+      "notes": "make sure the kids get enough sleep"
+    },
+    {
+      "id": "0b75",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-06-05",
+      "notes": "feed the kids"
+    },
+    {
+      "id": "cc3e",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "House Manager",
+      "date": "2025-05-22",
+      "time": "14:36",
+      "notes": "clean the house"
+    },
+    {
+      "id": "aee7",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-28",
+      "time": "14:36",
+      "notes": "clean the rooms"
+    },
+    {
+      "id": "a7b8",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-04-30",
+      "time": "14:39",
+      "notes": "clean the rooms"
     }
   ],
-  "trasactions": []
+  "trasactions": [
+    {
+      "id": "66ce",
+      "phone": "0717793977",
+      "amount": "50"
+    }
+  ]
 }

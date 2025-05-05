@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -18,22 +19,16 @@ export default function BookService() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://home-hero-server.vercel.app/bookings", {
+    fetch("http://localhost:3001/bookings", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(formData)
     })
+      
       .then(res => {
-        console.log(res);
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
-    })
-      .then(res => {
-        if (res.success) {
+        if (res.ok) {
           alert("Booking submitted successfully!");
 
         } else {
@@ -41,8 +36,8 @@ export default function BookService() {
         }
         setFormData({name: "", serviceType: "House Manager", date: "", notes: ""});
       })
-      .catch(erro => {
-        console.error(err)
+      .catch(error => {
+        console.error(error)
       })
   };
 

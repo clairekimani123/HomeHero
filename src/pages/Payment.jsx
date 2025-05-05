@@ -16,7 +16,7 @@ const Payment = () => {
 
 
         try {
-            const response = await fetch('http://localhost:4000/api/mpesa/stkpush', {
+            const response = await fetch('http://localhost:3001/trasactions', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

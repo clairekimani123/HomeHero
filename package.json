@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server --watch db.json --port 3001",
-    "proxy": "http://localhost:3001"
+    "proxy": "https://home-hero-server.vercel.app"
   },
   "dependencies": {
     "cors": "^2.8.5",
