@@ -10,7 +10,7 @@
     },
     {
       "id": "2",
-      "name": "Joyce Wairimu",
+      "name": "Brian Kiprono",
       "role": "House Manager",
       "experience": "5 years",
       "rating": 4.8,
@@ -18,7 +18,7 @@
     },
     {
       "id": "3",
-      "name": "Joseph Wamuyu",
+      "name": "Shanice Wamuyu",
       "role": "House Manager",
       "experience": "5 years",
       "rating": 4.8,
@@ -36,7 +36,7 @@
     },
     {
       "id": "2",
-      "name": "Gabriel Wanjiru",
+      "name": "Peter Maina",
       "role": "Babysitter",
       "experience": "3 years",
       "rating": 4.9,
@@ -44,7 +44,7 @@
     },
     {
       "id": "3",
-      "name": "Peter Maina",
+      "name": "Gabriel Wanjiru",
       "role": "Babysitter",
       "experience": "3 years",
       "rating": 4.9,
@@ -62,7 +62,7 @@
     },
     {
       "id": "2",
-      "name": "Dominic Waweru",
+      "name": "Ivy Wanja",
       "role": "Urgent Assistant",
       "experience": "2 years",
       "rating": 4.7,
@@ -101,7 +101,15 @@
       "date": "2025-06-04",
       "time": "20:34",
       "notes": "clean the house"
+    },
+    {
+      "id": "156a",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-06-04",
+      "time": "09:13",
+      "notes": "dishes"
     }
   ],
-  "payment": []
+  "trasactions": []
 }

@@ -1,46 +1,27 @@
-const express = require('express');
-const cors = require('cors');
-const app =express();
-const PORT = 3001;
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+
+server.use(middlewares);
 
 
-app.use(cors());
-app.use(express.json());
+server.use(jsonServer.rewriter({
+  '/api/mpesa/stkpush': '/transactions'
+}));
 
-//Mock database (in-memory)
-let transactions = [];
 
-//Mock M-Pesa STK Push route
-app.post('/api/mpesa/stkpush', (req, res) => {
-    const {phone, amount} = req.body;
+server.use(jsonServer.bodyParser);
 
-    if (!phone || !amount) {
-        return res.status(400).json({error: 'Missing phone or amount.'});
 
-    }
-    //Simulate transaction
-    const transaction = {
-        id: Date.now(),
-        phone,
-        amount,
-        status: 'Success',
-        message: 'Payment request sent. Check your phone.'
-    };
-
-    console.log('Payment request received:', transaction);
-
-    //Save it to mock DB
-    transactions.push(transaction);
-
-    //Simulate delay like real API 
-    setTimeout(() => {
-        res.status(200).json({
-            message: transaction.message,
-            transaction
-        });
-    }, 1500);
+server.use((req, res, next) => {
+  console.log(`Received ${req.method} request on ${req.url}`);
+  setTimeout(() => next(), 1000);
 });
 
-app.listen(PORT, () => {
-    console.log(`Mock M_Pesa  running`)
-})
+server.use(router);
+
+
+server.listen(4000, () => {
+  console.log('Mock server running at https://home-hero-server.vercel.app/trasactions');
+});
