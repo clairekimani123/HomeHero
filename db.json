@@ -180,6 +180,30 @@
       "date": "2025-06-05",
       "time": "22:08",
       "notes": "clean the rooms"
+    },
+    {
+      "id": "a54c",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-27",
+      "time": "22:48",
+      "notes": "clean the rooms"
+    },
+    {
+      "id": "6839",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-09",
+      "time": "10:49",
+      "notes": "clean the room"
+    },
+    {
+      "id": "0b33",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-30",
+      "time": "23:10",
+      "notes": "clean the windows"
     }
   ],
   "trasactions": [
@@ -211,6 +235,21 @@
     {
       "id": "2534",
       "phone": "0723475698",
+      "amount": "200"
+    },
+    {
+      "id": "6637",
+      "phone": "0734567890",
+      "amount": "200"
+    },
+    {
+      "id": "76a2",
+      "phone": "0723456789",
+      "amount": "120"
+    },
+    {
+      "id": "5ee7",
+      "phone": "0789765432",
       "amount": "200"
     }
   ]
