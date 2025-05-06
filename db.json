@@ -5,7 +5,7 @@
       "name": "Elizabeth Wanjiku",
       "role": "House Manager",
       "experience": "5 years",
-      "rating": 4.8,
+      "rating": 5.0,
       "image": "/images/maid1.jpeg"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Shanice Wamuyu",
       "role": "House Manager",
       "experience": "5 years",
-      "rating": 4.8,
+      "rating": 9.0,
       "image": "/images/maid3.jpeg"
     }
   ],
@@ -31,7 +31,7 @@
       "name": "Emily Wanja",
       "role": "Babysitter",
       "experience": "3 years",
-      "rating": 4.9,
+      "rating": 7.5,
       "image": "/images/babystr1.jpeg"
     },
     {
@@ -39,7 +39,7 @@
       "name": "Peter Maina",
       "role": "Babysitter",
       "experience": "3 years",
-      "rating": 4.9,
+      "rating": 8.9,
       "image": "/images/babystr2.jpeg"
     },
     {
@@ -47,7 +47,7 @@
       "name": "Gabriel Wanjiru",
       "role": "Babysitter",
       "experience": "3 years",
-      "rating": 4.9,
+      "rating": 7.9,
       "image": "/images/babystr3.jpeg"
     }
   ],
@@ -57,7 +57,7 @@
       "name": "Elizabeth Wanjiku",
       "role": "Urgent Assistant",
       "experience": "2 years",
-      "rating": 4.7,
+      "rating": 6.7,
       "image": "/images/urgent1.jpeg"
     },
     {
@@ -65,7 +65,7 @@
       "name": "Ivy Wanja",
       "role": "Urgent Assistant",
       "experience": "2 years",
-      "rating": 4.7,
+      "rating": 9.7,
       "image": "/images/urgent2.jpeg"
     },
     {
@@ -73,7 +73,7 @@
       "name": "Joyce Wairimu",
       "role": "Urgent Assistant",
       "experience": "2 years",
-      "rating": 4.7,
+      "rating": 5.7,
       "image": "/images/urgent3.jpeg"
     }
   ],
@@ -164,6 +164,22 @@
       "date": "2025-05-30",
       "time": "16:02",
       "notes": "clean the house"
+    },
+    {
+      "id": "db3b",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-29",
+      "time": "21:54",
+      "notes": "clean the house"
+    },
+    {
+      "id": "8555",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-06-05",
+      "time": "22:08",
+      "notes": "clean the rooms"
     }
   ],
   "trasactions": [
@@ -181,6 +197,16 @@
       "id": "0b0e",
       "phone": "0734567890",
       "amount": "300"
+    },
+    {
+      "id": "4fe3",
+      "phone": "0723897456",
+      "amount": "288"
+    },
+    {
+      "id": "e2d9",
+      "phone": "0723475698",
+      "amount": "199"
     }
   ]
 }
