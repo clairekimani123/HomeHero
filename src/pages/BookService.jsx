@@ -19,7 +19,7 @@ export default function BookService() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/bookings", {
+    fetch("https://home-hero-server.vercel.app/bookings", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
