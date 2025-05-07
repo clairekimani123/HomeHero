@@ -204,6 +204,54 @@
       "date": "2025-05-30",
       "time": "23:10",
       "notes": "clean the windows"
+    },
+    {
+      "id": "13e0",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-15",
+      "time": "22:29",
+      "notes": "clean the house"
+    },
+    {
+      "id": "e399",
+      "name": "Elizabeth Wanjiku",
+      "serviceType": "House Manager",
+      "date": "2025-05-28",
+      "time": "09:32",
+      "notes": "water the plants"
+    },
+    {
+      "id": "893c",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-05-22",
+      "time": "09:43",
+      "notes": "make sure the kids play outside"
+    },
+    {
+      "id": "001d",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-06-04",
+      "time": "09:51",
+      "notes": "let the kids shower"
+    },
+    {
+      "id": "2f76",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-05-14",
+      "time": "11:03",
+      "notes": "take the kids to school"
+    },
+    {
+      "id": "65ce",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-05-17",
+      "time": "14:36",
+      "notes": "wash the kids clothes"
     }
   ],
   "trasactions": [
@@ -251,6 +299,31 @@
       "id": "5ee7",
       "phone": "0789765432",
       "amount": "200"
+    },
+    {
+      "id": "3dd1",
+      "phone": "0723456789",
+      "amount": "100"
+    },
+    {
+      "id": "4f14",
+      "phone": "0717793977",
+      "amount": "100"
+    },
+    {
+      "id": "5eb1",
+      "phone": "0723456789",
+      "amount": "100"
+    },
+    {
+      "id": "8587",
+      "phone": "0717793777",
+      "amount": "100"
+    },
+    {
+      "id": "a9b3",
+      "phone": "0745678908",
+      "amount": "100"
     }
   ]
 }
