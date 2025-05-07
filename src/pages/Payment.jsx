@@ -16,7 +16,7 @@ const Payment = () => {
 
 
         try {
-            const response = await fetch('http://localhost:3001/trasactions', {
+            const response = await fetch('https://home-hero-server.vercel.app/trasactions', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',
