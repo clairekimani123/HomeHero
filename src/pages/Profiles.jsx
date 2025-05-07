@@ -18,7 +18,7 @@ export default function Profiles() {
       .then(data => setBabysitters(data))
       .catch(error => console.error("Error fetching babysitters:", error));
 
-    fetch("https://home-hero-server.vercel.app/urgentAssistantss")
+    fetch("https://home-hero-server.vercel.app/urgentAssistants")
       .then(res => res.json())
       .then(data => setAssistants(data))
       .catch(error => console.error("Error fetching urgentAssistants:", error));
