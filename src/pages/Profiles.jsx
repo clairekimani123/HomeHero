@@ -8,17 +8,17 @@ export default function Profiles() {
   const [assistants, setAssistants] = useState([]);
 
   useEffect(() => {
-    fetch("https://home-hero-server.vercel.app/houseManagers")
+    fetch("http://localhost:3001/houseManagers")
       .then(res => res.json())
       .then(data => setManagers(data))
       .catch(error => console.error("Error fetching houseManager:", error));
 
-    fetch("https://home-hero-server.vercel.app/babysitters")
+    fetch("http://localhost:3001/babysitters")
       .then(res => res.json())
       .then(data => setBabysitters(data))
       .catch(error => console.error("Error fetching babysitters:", error));
 
-    fetch("https://home-hero-server.vercel.app/urgentAssistants")
+    fetch("http://localhost:3001/urgentAssistants")
       .then(res => res.json())
       .then(data => setAssistants(data))
       .catch(error => console.error("Error fetching urgentAssistants:", error));
