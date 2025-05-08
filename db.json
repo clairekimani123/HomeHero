@@ -252,6 +252,22 @@
       "date": "2025-05-17",
       "time": "14:36",
       "notes": "wash the kids clothes"
+    },
+    {
+      "id": "a252",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-05-22",
+      "time": "21:41",
+      "notes": "double check the rooms"
+    },
+    {
+      "id": "d0e3",
+      "name": "Gabriel Wanjiru",
+      "serviceType": "Babysitter",
+      "date": "2025-05-08",
+      "time": "10:39",
+      "notes": "double check the kid"
     }
   ],
   "trasactions": [
@@ -323,6 +339,41 @@
     {
       "id": "a9b3",
       "phone": "0745678908",
+      "amount": "100"
+    },
+    {
+      "id": "ae91",
+      "phone": "0717793977",
+      "amount": "100"
+    },
+    {
+      "id": "f785",
+      "phone": "0745678986",
+      "amount": "189"
+    },
+    {
+      "id": "1585",
+      "phone": "0767890543",
+      "amount": "123"
+    },
+    {
+      "id": "834c",
+      "phone": "0789098765",
+      "amount": "600"
+    },
+    {
+      "id": "b955",
+      "phone": "0767890543",
+      "amount": "120"
+    },
+    {
+      "id": "5005",
+      "phone": "0767890543",
+      "amount": "200"
+    },
+    {
+      "id": "0f8c",
+      "phone": "0723456789",
       "amount": "100"
     }
   ]
